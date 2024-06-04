@@ -1,5 +1,6 @@
 package com.coderscampus.arraylist;
 
+
 public interface CustomList<T> {
 	/**
 	 * This method should add a new item into the <code>CustomList</code> and should
