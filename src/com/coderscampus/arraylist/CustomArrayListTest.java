@@ -3,8 +3,15 @@ package com.coderscampus.arraylist;
 public class CustomArrayListTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		CustomArrayList<Integer> list = new CustomArrayList();
+		for (Integer i = 0; i < 15; i++) {
+			list.add(i);
+		}
+		System.out.println("Size: " + list.getSize());
+		
+		for (Integer i = 0; i < list.getSize(); i++) {
+			System.out.println("Element at index " + i + ": " + list.get(i));
+		}
 	}
-
+	
 }
