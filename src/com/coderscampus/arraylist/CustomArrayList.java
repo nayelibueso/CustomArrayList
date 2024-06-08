@@ -20,14 +20,15 @@ public class CustomArrayList<T> implements CustomList<T> {
 
 	@Override
 	public int getSize() {
-		// TODO Auto-generated method stub
-		return 0;
+		return size;
 	}
 
 	@Override
 	public T get(int index) {
-		// TODO Auto-generated method stub
-		return null;
+		if (index >= size || index < 0) {
+			throw new IndexOutOfBoundsException("Index : " + index + "Size: " + size);
+		}
+		return (T) items[index];
 	}
 	
 }
