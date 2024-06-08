@@ -13,8 +13,9 @@ public class CustomArrayList<T> implements CustomList<T> {
 	}
 
 	private void resizeArray() {
-		// TODO Auto-generated method stub
-		
+		Object[] newItems = new Object [items.length * 2];
+		System.arraycopy(items, 0, newItems, 0, items.length);
+		items = newItems;
 	}
 
 	@Override
