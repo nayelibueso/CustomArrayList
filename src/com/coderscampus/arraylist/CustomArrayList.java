@@ -1,5 +1,7 @@
 package com.coderscampus.arraylist;
 
+import java.util.Arrays;
+
 public class CustomArrayList<T> implements CustomList<T> {
 	Object[] items = new Object[10];
 	private Integer size = 0;
@@ -13,9 +15,7 @@ public class CustomArrayList<T> implements CustomList<T> {
 	}
 
 	private void resizeArray() {
-		Object[] newItems = new Object [items.length * 2];
-		System.arraycopy(items, 0, newItems, 0, items.length);
-		items = newItems;
+		items = Arrays.copyOf(items, items.length * 2);
 	}
 
 	@Override

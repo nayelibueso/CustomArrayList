@@ -3,7 +3,7 @@ package com.coderscampus.arraylist;
 public class CustomArrayListTest {
 
 	public static void main(String[] args) {
-		CustomArrayList<Integer> list = new CustomArrayList();
+		CustomArrayList<Integer> list = new CustomArrayList<Integer>();
 		for (Integer i = 0; i < 15; i++) {
 			list.add(i);
 		}
